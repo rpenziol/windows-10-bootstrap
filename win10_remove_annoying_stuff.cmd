@@ -154,6 +154,14 @@ REG add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\E
 REM *** Disable Action Center ***
 REG add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "DisableNotificationCenter " /t REG_DWORD /d 1 /f
 
+REM *** POWER OPTIONS ***
+REM *** Set 'Ultimate Performance' power scheme ***
+for /f "tokens=4" %g in ('powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61') do set GUID=%g
+powercfg /setactive %GUID%
+
+REM *** Display never turns off ***
+powercfg -change -monitor-timeout-ac 0
+
 REM *** Uninstall OneDrive ***
 start /wait "" "%SYSTEMROOT%\SYSWOW64\ONEDRIVESETUP.EXE" /UNINSTALL
 rd C:\OneDriveTemp /Q /S >NUL 2>&1
