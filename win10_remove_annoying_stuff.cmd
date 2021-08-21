@@ -84,32 +84,85 @@ REM 1 = This PC, 2 = Quick access
 REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "LaunchTo" /t REG_DWORD /d 1 /f
 
 @rem Remove Apps
-PowerShell -Command "Get-AppxPackage *3DBuilder* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *Getstarted* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *WindowsAlarms* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *WindowsCamera* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *bing* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *MicrosoftOfficeHub* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *OneNote* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *people* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *WindowsPhone* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *photos* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *SkypeApp* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *solit* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *WindowsSoundRecorder* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *xbox* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *zune* | Remove-AppxPackage"
-REM PowerShell -Command "Get-AppxPackage *WindowsCalculator* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *WindowsMaps* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *Sway* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *CommsPhone* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *ConnectivityStore* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *Microsoft.Messaging* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *Facebook* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *Twitter* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *Drawboard PDF* | Remove-AppxPackage"
-
+PowerShell -Command "Get-AppxPackage -allusers *3DBuilder* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *ACGMediaPlayer* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *ActiproSoftwareLLC* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *AdobePhotoshopExpress* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *AdobePhotoshopExpress* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Advertising.Xaml* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Advertising.Xaml* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Advertising.Xaml* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *AppConnector* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Asphalt8Airborne* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *AutodeskSketchBook* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *BingFinance* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *BingNews* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *BingSports* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *BingTranslator* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *BingWeather* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *BubbleWitch3Saga* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *CandyCrush* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *CyberLinkMediaSuiteEssentials* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *DisneyMagicKingdoms* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *DrawboardPDF* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Duolingo-LearnLanguagesforFree* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *EclipseManager* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Facebook* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *FarmVille2CountryEscape* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Flipboard* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *GetHelp* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Getstarted* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *HiddenCity* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *HiddenCityMysteryofShadows* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Hulu* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Keeper* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Lens* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *LinkedInforWindows* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *MarchofEmpires* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Messaging* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Microsoft.MSPaint* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Microsoft3DViewer* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *MicrosoftOfficeHub* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *MicrosoftOfficeHub* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *MicrosoftPowerBIForWindows* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *MicrosoftSolitaireCollection* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *MicrosoftStickyNotes* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *MixedReality.Portal* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Netflix* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *NetworkSpeedTest* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *OneCalendar* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *OneConnect* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *OneNote* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *PandoraMediaInc* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *People* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Plex* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Print3D* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *RemoteDesktop* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Roblox* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *RoyalRevolt* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *RoyalRevolt2* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *ScreenSketch* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *SkypeApp* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *SolitaireCollection* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *SpeedTest* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *SpotifyMusic* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Sway* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Sway* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Twitter* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Viber* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Wallet* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Whiteboard* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *WinZipUniversal* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *WindowsAlarms* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *WindowsFeedbackHub* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *WindowsMaps* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *WindowsPhone* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *WindowsSoundRecorder* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *Wunderlist* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *XING* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *YourPhone* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers *windowscommunicationsapps* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage -allusers Microsoft.549981C3F5F1 | Remove-AppxPackage"
 
 @rem NOW JUST SOME TWEAKS
 REM *** Show hidden files in Explorer ***
@@ -122,9 +175,24 @@ REM *** Show file extensions in Explorer ***
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t  REG_DWORD /d 0 /f
 
 REM *** Disable Bing Cortona search ***
-reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Search /f /v BingSearchEnabled /t REG_DWORD /d 0
-reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Search /f /v AllowSearchToUseLocation /t REG_DWORD /d 0
-reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Search /f /v CortanaConsent /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "AllowSearchToUseLocation" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "BingSearchEnabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "CortanaConsent" /t REG_DWORD /d 0
+
+REM *** Disable lock screen 'Get fun facts, tips, tricks and more' ***
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "ContentDeliveryAllowed" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "RotatingLockScreenEnabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "RotatingLockScreenOverlayEnabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "OemPreInstalledAppsEnabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "PreInstalledAppsEnabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "PreInstalledAppsEverEnabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SilentInstalledAppsEnabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338387Enabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338388Enabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338389Enabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-353698Enabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SystemPaneSuggestionsEnabled" /t REG_DWORD /d 0
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\CloudContent" /f /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1
 
 REM *** Combine taskbar buttons ***
 REM 0 = Always, 1 = When Taskbar is Full, 2 = Never
