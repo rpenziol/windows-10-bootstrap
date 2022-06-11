@@ -24,6 +24,7 @@ ffmpeg ^
 Firefox ^
 foobar2000 ^
 foxitreader ^
+gimagereader ^
 git ^
 googleearthpro ^
 handbrake ^
