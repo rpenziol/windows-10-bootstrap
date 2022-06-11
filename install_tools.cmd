@@ -16,6 +16,7 @@ calibre ^
 coretemp ^
 crystaldiskinfo ^
 crystaldiskmark ^
+czkawka ^
 discord ^
 docker-desktop ^
 eartrumpet ^
@@ -42,6 +43,7 @@ python3 ^
 renamer ^
 retroarch ^
 rufus ^
+shotcut ^
 sqlitebrowser ^
 steam ^
 synctrayzor ^
