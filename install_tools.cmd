@@ -12,17 +12,13 @@ PowerShell -Command Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Ne
 C:\ProgramData\chocolatey\bin\choco.exe install -y ^
 agentransack ^
 audacity ^
-calibre ^
 coretemp ^
 crystaldiskinfo ^
 crystaldiskmark ^
-czkawka ^
 discord ^
-docker-desktop ^
 eartrumpet ^
 ffmpeg ^
 Firefox ^
-foobar2000 ^
 foxitreader ^
 gimagereader ^
 git ^
@@ -30,11 +26,7 @@ googleearthpro ^
 handbrake ^
 hwinfo ^
 InkScape ^
-iTunes ^
-libreoffice-fresh ^
-lossless-audio-checker ^
 lossless-cut ^
-meld ^
 microsoft-windows-terminal ^
 mkvtoolnix ^
 nomacs ^
@@ -42,9 +34,8 @@ obs-studio ^
 postman ^
 python3 ^
 renamer ^
-retroarch ^
 rufus ^
-shotcut ^
+signal ^
 sqlitebrowser ^
 steam ^
 synctrayzor ^
@@ -56,9 +47,10 @@ vlc ^
 vscode ^
 win32diskimager ^
 windirstat ^
-winscp ^
-wsl-ubuntu-2004 ^
-wsl2
+winscp
+
+@REM Install Windows Subsystem for Linux (WSL)
+wsl --install
 
 @REM Install OpenSSH Server, enable and start OpenSSH Server service
 PowerShell -Command "Add-WindowsCapability -Online -Name (Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Server*').Name"
